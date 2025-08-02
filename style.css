@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.2s ease-in;
+    padding: 4px 12px;
+    cursor: pointer;
+    height: 32px;
+    border: 2px solid black;
+}

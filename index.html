@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ToDoly | To Dp List</title>
+        <link rel="stylesheet" href="./dist/style.css" />
+        <script src="./dist/app.js" defer></script>
+    </head>
+    <body>
+        <header class="bg-black px-5 h-20">
+            <div class="max-w-[1280px] mx-auto h-full">
+                <div class="flex justify-between items-center h-full">
+                    <h1 class="text-white font-bold text-xl">ToDoly</h1>
+                    <ul class="flex gap-2.5 text-white text-l">
+                        <a href="">
+                            <li>Tasks</li>
+                        </a>
+                        <a href="">
+                            <li>Account</li>
+                        </a>
+                        <a href="">
+                            <li>Themes</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="max-w-[1280px] mx-auto px-5">
+                <div class="">
+                    <div class="flex flex-col pt-3">
+                        <h2 class="text-2xl font-extrabold">Create new task:</h2>
+                        <form id="create-task-form" class="flex gap-2 pt-3">
+                            <input
+                                type="text"
+                                id="create-task-input"
+                                placeholder="Your new task"
+                                class="bg-white h-8 text-black border-black border p-1 rounded-xl pl-4 outline-none"
+                            />
+                            <button
+                                class="button bg-[#C2FF55] hover:bg-[#000] hover:text-white"
+                                type="submit"
+                                id="create-btn"
+                            >
+                                Create
+                            </button>
+                            <h3 id="create-task-error-text"></h3>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="max-w-[1280px] mx-auto px-5 mt-6">
+                <h2 class="text-2xl font-extrabold">Your Tasks:</h2>
+                <div class="pt-3" id="tasks-list">
+                    <div class="flex border justify-between items-center">
+                        <h3 class="">New Task</h3>
+                        <div class="flex border-amber-400 border gap-2.5">
+                            <button class="button delete-button" id="create-btn" type="button">
+                                Complete
+                            </button>
+                            <button id="delete-btn" class="button delete-button" type="button">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="max-w-[1280px] mx-auto px-5 mt-6">
+                <h2 class="text-2xl font-extrabold">Completed Tasks:</h2>
+                <div class="pt-3" id="completed-tasks-list">
+                    <div class="flex border justify-between items-center">
+                        <h3 class="">New Task</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

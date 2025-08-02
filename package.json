@@ -1,0 +1,22 @@
+{
+    "type": "module",
+    "scripts": {
+        "build": "postcss style.css -o dist/style.css && npx tsc -p tsconfig.json",
+        "build:css-watch": "postcss style.css -o dist/style.css --watch",
+        "build:ts-watch": "npx tsc --watch -p tsconfig.json",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "dependencies": {
+        "@tailwindcss/postcss": "^4.1.11",
+        "postcss": "^8.5.6",
+        "postcss-cli": "^11.0.1",
+        "tailwindcss": "^4.1.11"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.32.0",
+        "eslint": "^9.32.0",
+        "globals": "^16.3.0",
+        "typescript-eslint": "^8.38.0"
+    }
+}
